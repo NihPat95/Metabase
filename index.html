@@ -26,76 +26,51 @@
                <link rel="icon" type="image/png" href="img/icon.png">
                <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
             </head>
-            <body style="overflow-x:hidden;">
-               <img class="back" src="img/iconlarge.png">
-               <nav class="navbar navbar-inverse navbar-fixed-top">
-                  <div class="container-fluid">
-                    <div class="navbar-header">
-                      <a style="margin-left:75px;" class="navbar-brand" href="#">Metabase</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                      <li><a href="#intro">Home</a></li>
-                      <li><a href="#search" title="">Search</a></li>
-                      <li><a href="#collection" title="">Collection</a></li>
-                      <li><a href="#movies" title="">Movies</a></li>
-                       <li><a href="#music" title="">Music</a></li>
-                       <li><a href="#download" title="">Download</a></li>
-                       <li><a href="#contact" title="">Contact</a></li>
-                  </ul>
-                  </div>
-              </nav>
-               <div class="container main">
-                  <section id="intro">
-                     <div class="row intro-content">
-                        <div class="col-twelve">
+            <body>
+               <div class="main">
+                  <!-- Main start-->
+                  <nav class="navbar navbar-fixed-top navbar-inverse">
+                     <div class="container-fluid">
+                        <div class="navbar-header">
+                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>                        
+                           </button>
+                           <a class="navbar-brand" href="#intro">Metabase</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                           <ul class="nav navbar-nav">
+                              <li><a href="#search" title="">Search</a></li>
+                              <li><a href="#collection" title="">Collection</a></li>
+                              <li><a href="#movies" title="">Movies</a></li>
+                              <li><a href="#tv" title="">Tv</a></li>
+                              <li><a href="#music" title="">Music</a></li>
+                              <li><a href="#download" title="">Download</a></li>
+                              <li><a href="#contact" title="">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </nav>
+
+
+                <section id="intro">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm-12">
                            <img src="img/icon.png" alt="" class="logo">
-                           <h3 class="animate-intro">Metabase</h3>
-                           <h1 class="animate-intro">
+                           <h3>Metabase</h3>
+                           <h2>
                               Application for your collection of Movies, Tv shows and Songs.
-                           </h1>
+                           </h2>
                            <img src="img/ss.jpg" alt="" class="ss">
                         </div>
                         <!-- /twelve --> 		   			
                      </div>
+                  </div>
                      <!-- /row -->   
-                  </section>
-                  <!-- /intro -->
-                  <section id="search" class="search n">
-                 
-                     <div class="container cont">
-                        <div class="row">
-                           <div  class="col-sm-4 feat">
-                              <div class="title">Search</div>
-                              <p class="text">Search for movies, tv shows, songs, singer and actors. Search movies using title, genre, actor or keyword. Search Tv by title or genre.</p>
-                           </div>
-                           <div  class="col-sm-8 feat">
-                              <div id = "myCarousel1" class = "carousel slide">
-                                 <!-- Carousel indicators -->
-                                 <ol class = "carousel-indicators" style="bottom:-40px">
-                                    <li data-target = "#myCarousel1" data-slide-to = "0" class = "active"></li>
-                                    <li data-target = "#myCarousel1" data-slide-to = "1"></li>
-                                    <li data-target = "#myCarousel1" data-slide-to = "2"></li>
-                                 </ol>
-                                 <!-- Carousel items -->
-                                 <div class = "carousel-inner">
-                                    <div class = "item active">
-                                       <img src = "img/search/1.jpg" alt = "">
-                                    </div>
-                                    <div class = "item">
-                                       <img src = "img/search/2.jpg" alt = "">
-                                    </div>
-                                    <div class = "item">
-                                       <img src = "img/search/3.jpg" alt = "">
-                                    </div>
-                                        <a class = "carousel-control left" href = "#myCarousel1" data-slide = "prev">&lsaquo;</a>
-   <a class = "carousel-control right" href = "#myCarousel1" data-slide = "next">&rsaquo;</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </section>
-                  <section  id="collection" class="collection rev">
+                </section>
+                <section  id="collection" class="collection rev">
                     
                      <div class="container cont">
                         <div class="row">
@@ -285,11 +260,11 @@
                         </div>
                      </div>
                   </section>
-               </div>
-               <div id="preloader"> 
-    	            <div id="loader">Loading...</div>
-               </div> 
+                
 
+
+                  <!-- Main end-->
+               </div>
                <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
                <script src="js/vendor/bootstrap.min.js"></script>
                <script src="js/main.js"></script>

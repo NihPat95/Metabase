@@ -40,7 +40,7 @@ color: black;
    
 }
 .ss{
-    width: 600px;
+    width: 80%;
 }
 .n{
     padding: 50px;
@@ -124,5 +124,7 @@ color: black;
 .gicon{
     position: absolute;
 }
-
+.feat{
+    padding: 20px;
+}
 
